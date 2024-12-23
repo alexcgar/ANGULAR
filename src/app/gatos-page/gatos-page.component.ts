@@ -24,9 +24,11 @@ export class GatosPageComponent {
     this.fetchGatos();
   }
 
+  
   search = '';
   showPage = true;
   countries: string[] = [];
+
 
   toggleShowPage() {
     if (!this.showPage) {
@@ -38,8 +40,6 @@ export class GatosPageComponent {
   }
   
   
-
-
   fetchGatos() {
     fetch('https://api.thecatapi.com/v1/breeds', {
       headers: {
@@ -70,6 +70,7 @@ export class GatosPageComponent {
   orderIntelligence() {
     this.cats = [...this.cats.sort((a, b) => b.intelligence - a.intelligence)];
   }
+
 
   countryFlags: { [key: string]: string } = {
     Egypt: 'https://img.icons8.com/color/48/egypt-circular.png',

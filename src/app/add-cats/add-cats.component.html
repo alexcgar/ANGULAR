@@ -22,7 +22,7 @@
                 <input type="text" id="raza" [(ngModel)]="newCat.raza" name="raza" required>
             </div>
             <div class="form-group">
-                <label for="weight">weight:</label>
+                <label for="weight">Peso:</label>
                 <input type="text" id="weight" [(ngModel)]="newCat.weight" name="weight" required>
             </div>
             <div class="form-group">
@@ -72,7 +72,7 @@
                             <h5 class="card-title">{{cat.nombre}}</h5>
                             <p class="card-text">
                                 Life Span: {{cat.lifespan}} años<br>
-                                Weight: {{cat.weight}} kg<br>
+                                Weiscght: {{cat.weight}} kg<br>
                                 Temperament: {{cat.temperament}}.<br>
                                 Origin: {{cat.origin}}<br>
                                 Date Added: {{currentDate | date: 'dd/MM/yyyy'}} 

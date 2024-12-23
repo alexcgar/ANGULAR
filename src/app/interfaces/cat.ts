@@ -9,4 +9,5 @@ export interface Cat {
     origin: string;
     intelligence: number;
     rating?: number;
+    
 }

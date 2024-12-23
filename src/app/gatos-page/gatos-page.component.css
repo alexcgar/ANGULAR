@@ -48,3 +48,9 @@ footer {
 #scrollUpBtn:hover {
     background-color: #6b5b95;
 }
+.sticky-footer {
+    
+    bottom: 0;
+    width: 100%;
+    background-color: #db6930;
+}

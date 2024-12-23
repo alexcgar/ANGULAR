@@ -7,8 +7,9 @@ import { Cat } from '../interfaces/cat';
 export class GatosFilterPipe implements PipeTransform {
 
   transform(cats: Cat[], ...search: string[]): Cat[] {
+    const searchTerms = search.join(' ').split(',').map(term => term.trim().toLowerCase());
     return cats.filter(c => 
-      search.some(term => c.origin.toLowerCase().includes(term.toLowerCase()))
+      searchTerms.some(term => c.origin.toLowerCase().includes(term))
     );
   }
 
