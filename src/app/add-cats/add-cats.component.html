@@ -1,0 +1,88 @@
+<div class="row mb-3">
+    <div class="col-12 col-lg-4     mt-3">
+        <h1 class="text-center mt-5">Simula como seria añadir a tu propio gato</h1>
+        <div> </div>
+    <div class="text-center mt-3">
+        <img src="https://cdn.pixabay.com/photo/2021/07/22/10/02/cats-6484961_1280.png" alt="imagen de gato" width="300" class="p-1 pulsing-image">
+    </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+
+
+        @if(showForm()) {
+        <form #formCat="ngForm" (ngSubmit)="addCat(formCat)" class="add-cat-form mt-5">
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" [(ngModel)]="newCat.nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" [(ngModel)]="newCat.raza" name="raza" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">weight:</label>
+                <input type="text" id="weight" [(ngModel)]="newCat.weight" name="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="temperament">Temperamento:</label>
+                <input type="text" id="temperament" [(ngModel)]="newCat.temperament" name="temperament">
+            </div>
+            <div class="form-group">
+                <label for="origin">Origen:</label>
+                <input type="text" id="origin" [(ngModel)]="newCat.origin" name="origin">
+            </div>
+            <div class="form-group">
+                <label for="imagen">Imagen URL:</label>
+                <input type="file" id="image" name="image" #imgInput (change)="imgToBase64(imgInput)">
+            </div>
+            @if(newCat.image) {
+            <div class="text-center">
+                <img [src]="newCat.image" alt="imagen de gato" width="300" class="p-1">
+            </div>
+            }
+            <div class="row">
+                <div class="form-actions mt-1 col-6">
+                    <button type="submit">Agregar Gato</button>
+                </div>
+                <div class="form-actions mt-1 col-6">
+                    <button type="button" (click)="formCat.resetForm()">Resetear formulario</button>
+                </div>
+            </div>
+        </form>
+        }
+        <button class="btn btn-sm d-block mx-auto mt-3" 
+                    [ngClass]="{
+                    'btn-primary': showForm(), 
+                    'btn-secondary': !showForm(),
+                    }" 
+                    (click)="toggleForm()">
+                    {{ showForm() ? 'Ocultar Formulario' : 'Mostrar Formulario' }}
+        </button>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="added-cats mt-5">
+            <div class=" g-4 p-4">
+                @for (cat of cats; track cat.id) {
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{{cat.image}}" class="card-img-top" alt="{{cat.nombre}}" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{cat.nombre}}</h5>
+                            <p class="card-text">
+                                Life Span: {{cat.lifespan}} años<br>
+                                Weight: {{cat.weight}} kg<br>
+                                Temperament: {{cat.temperament}}.<br>
+                                Origin: {{cat.origin}}<br>
+                                Date Added: {{currentDate | date: 'dd/MM/yyyy'}} 
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

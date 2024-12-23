@@ -1,0 +1,78 @@
+<div class="row">
+    <nav class="navbar navbar-light p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" (click)="toggleShowPage()">
+                <img src="https://img.icons8.com/?size=100&id=NAb5cx6yKB_A&format=png&color=000000" alt="icono gato" width="40"
+                    height="40" class="d-inline-block align-text-top cat">
+                Just Cats!
+            </a>
+            <ul class="nav justify-content-end d-none d-md-flex">
+                <li class="nav-item">
+                    <button class="btn btn-dark me-2" (click)="toggleShowPage()">Add Cat</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-dark" (click)="orderIntelligence()">Order By Intelligence</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+@if(showPage) {
+<div class="row mt-4 text-center">
+    <label class="col-form-label col-12 col-lg-3" for="filterDesc">
+        Search By Country:
+    </label>
+    <div class="col-12 col-lg-8">
+        <div class="input-group">
+            <input type="text" [(ngModel)]="search" class="form-control" id="filterDesc"
+                placeholder="Filter by country..." />
+        </div>
+    </div>
+</div>
+<div class="row mt-4  justify-content-center">
+    @for (country of countries; track $index) {
+    <div class=" col-3 col-lg-1 p-1 text-center">
+        <img [src]="countryFlags[country]" alt="{{country}}" class="img-fluid rounded-circle"
+            style="width: 50px; height: 50px;" (click)="search = country">
+    </div>
+    }
+</div>
+
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+    @for (cat of cats | gatosFilter:search; track cat.id) {
+        <cat-item [cat]="cat"></cat-item>
+    }
+</div>
+} @else {
+    <add-cats></add-cats>
+}
+
+<div class="row">
+
+    <footer class="text-center text-lg-start" style="background-color: #db6930;">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-dark btn-lg btn-floating mx-2">
+                <i class="bi bi-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-dark btn-lg btn-floating mx-2">
+                <i class="bi bi-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-dark btn-lg btn-floating mx-2">
+                <i class="bi bi-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-dark btn-lg btn-floating mx-2">
+                <i class="bi bi-twitter"></i>
+            </button>
+        </div>
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Alejandro Caparrós
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+</div>
+<button id="scrollUpBtn" (click)="scrollToTop()" class="btn btn-primary btn-lg scroll-up">
+    <i class="bi bi-arrow-up"></i>
+</button>

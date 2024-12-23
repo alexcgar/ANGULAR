@@ -1,0 +1,20 @@
+<div class="col">
+    <div class="card h-100 border-cream d-flex flex-column">
+        <img src="{{cat().image}}" class="card-img-top" alt="{{cat().nombre}}" />
+        <div class="card-body flex-grow-1">
+            <h5 class="card-title">{{cat().nombre}}</h5>
+            <p class="card-text">
+                <strong>Life Span:</strong> {{cat().lifespan}} años<br>
+                <strong>Weight:</strong> {{cat().weight}} kg<br>
+                <strong>Temperament:</strong> {{cat().temperament}}.<br>
+                <strong>Origin:</strong> {{cat().origin}}<br>
+                <strong>Intelligence:</strong> {{cat().intelligence}}
+            </p>
+        </div>
+        <div class="card-footer">
+            <div>
+                <start-rating [rating]="cat().intelligence || 1"></start-rating> 
+            </div>
+        </div>
+    </div>
+</div>

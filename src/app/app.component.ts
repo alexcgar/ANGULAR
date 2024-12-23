@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { GatosPageComponent } from './gatos-page/gatos-page.component';
+import { AddCatComponent } from "./add-cats/add-cats.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [GatosPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

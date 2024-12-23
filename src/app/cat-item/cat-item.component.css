@@ -1,0 +1,18 @@
+.card-img-top {
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center center;
+    aspect-ratio: 7/5;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+
+.border-cream {
+    border: 10px solid #f7f79a;
+}
+
+.navbar {
+    background: linear-gradient(to right, #fcfcc9, #ffff54);
+}
+
+

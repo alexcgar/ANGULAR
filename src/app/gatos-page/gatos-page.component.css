@@ -1,0 +1,50 @@
+
+.navbar {
+    background: linear-gradient(to right, #fcfcc9, #ffff54);
+}
+
+.cat {
+    background: url('https://img.icons8.com/?size=100&id=NAb5cx6yKB_A&format=png&color=000000') no-repeat;
+    background-size: contain;
+    position: absolute;
+    animation: moveCat 10s linear forwards;
+    transition: transform 0.5s;
+}
+
+.cat:hover {
+    transform: translateX(100px);
+}
+
+@keyframes moveCat {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+footer {
+    background: linear-gradient(to right, #fcfcc9, #ffff54);
+}
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: none;
+    background-color: #54456b;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#scrollUpBtn:hover {
+    background-color: #6b5b95;
+}

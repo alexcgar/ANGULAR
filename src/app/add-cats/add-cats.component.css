@@ -1,0 +1,89 @@
+/* Estilos para el formulario de añadir gatos */
+.add-cat-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ecf3c5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-cat-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-cat-form .form-group {
+    margin-bottom: 15px;
+}
+
+.add-cat-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.add-cat-form .form-group input,
+.add-cat-form .form-group select,
+.add-cat-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.add-cat-form .form-group input:focus,
+.add-cat-form .form-group select:focus,
+.add-cat-form .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.add-cat-form .form-group textarea {
+    resize: vertical;
+}
+
+.add-cat-form .form-actions {
+    text-align: center;
+}
+
+.add-cat-form .form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-cat-form .form-actions button:hover {
+    background-color: #0056b3;
+}
+.card-img-top {
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center center;
+    aspect-ratio: 18/15;
+
+}
+
+.pulsing-image {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
