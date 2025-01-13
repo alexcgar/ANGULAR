@@ -6,11 +6,15 @@ import { Cat } from '../interfaces/cat';
 })
 export class GatosFilterPipe implements PipeTransform {
 
-  transform(cats: Cat[], ...search: string[]): Cat[] {
-    const searchTerms = search.join(' ').split(',').map(term => term.trim().toLowerCase());
-    return cats.filter(c => 
-      searchTerms.some(term => c.origin.toLowerCase().includes(term))
+  transform(cats: Cat[], search: string): Cat[] {
+    if (!search) return cats;
+
+    // Divide los términos de búsqueda separados por comas y normaliza a minúsculas
+    const searchTerms = search.split(',').map(term => term.trim().toLowerCase());
+
+    // Filtra los gatos cuyo origen coincida con alguno de los términos de búsqueda
+    return cats.filter(cat =>
+      searchTerms.some(term => cat.origin.toLowerCase().includes(term))
     );
   }
-
 }
