@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AngularGatos</title>
-</head>
+
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
     <h1 style="color: #333;">AngularGatos</h1>
     <p>This project was developed as part of a final assignment for a course I took on learning Angular. The theme is a cat information page that provides details about different kinds of cats using the Cat API.</p>
