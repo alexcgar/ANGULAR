@@ -1,40 +1,65 @@
+# AngularGatos 🐱🐾
 
-<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
-    <h1 style="color: #333;">AngularGatos</h1>
-    <p>This project was developed as part of a final assignment for a course I took on learning Angular. The theme is a cat information page that provides details about different kinds of cats using the Cat API.</p>
-    <h2 style="color: #333;">Development Server</h2>
-    <p>To start a local development server, run:</p>
-    <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px; display: block; margin: 10px 0;">
-        ng serve
-    </code>
-    <p>Once the server is running, open your browser and navigate to <a href="http://localhost:4200/" target="_blank" style="color: #007BFF; text-decoration: none;">http://localhost:4200/</a>. The application will automatically reload whenever you modify any of the source files.</p>
-    <h2 style="color: #333;">Code Scaffolding</h2>
-    <p>Angular CLI includes powerful code scaffolding tools. To generate a new component, run:</p>
-    <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px; display: block; margin: 10px 0;">
-        ng generate component component-name
-    </code>
-    <p>For a complete list of available schematics (such as <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px;">components</code>, <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px;">directives</code>, or <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px;">pipes</code>), run:</p>
-    <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px; display: block; margin: 10px 0;">
-        ng generate --help
-    </code>
-    <h2 style="color: #333;">Building</h2>
-    <p>To build the project run:</p>
-    <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px; display: block; margin: 10px 0;">
-        ng build
-    </code>
-    <p>This will compile your project and store the build artifacts in the <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px;">dist/</code> directory. By default, the production build optimizes your application for performance and speed.</p>
-    <h2 style="color: #333;">Running Unit Tests</h2>
-    <p>To execute unit tests with the <a href="https://karma-runner.github.io" target="_blank" style="color: #007BFF; text-decoration: none;">Karma</a> test runner, use the following command:</p>
-    <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px; display: block; margin: 10px 0;">
-        ng test
-    </code>
-    <h2 style="color: #333;">Running End-to-End Tests</h2>
-    <p>For end-to-end (e2e) testing, run:</p>
-    <code style="background-color: #f4f4f4; padding: 5px; border-radius: 4px; display: block; margin: 10px 0;">
-        ng e2e
-    </code>
-    <p>Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.</p>
-    <h2 style="color: #333;">Additional Resources</h2>
-    <p>For more information on using the Angular CLI, including detailed command references, visit the <a href="https://angular.dev/tools/cli" target="_blank" style="color: #007BFF; text-decoration: none;">Angular CLI Overview and Command Reference</a> page.</p>
-</body>
-</html>
+Este proyecto fue desarrollado como parte de un trabajo final para un curso sobre Angular. El tema es una página de información sobre gatos, que proporciona detalles acerca de diferentes tipos de gatos utilizando la API de gatos.
+
+## Servidor de Desarrollo 🚀
+
+Para iniciar un servidor de desarrollo local, ejecuta:
+
+```bash
+ng serve
+Una vez que el servidor esté en ejecución, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
+
+Generación de Código 🖥️
+El Angular CLI incluye herramientas potentes para la generación de código. Para generar un nuevo componente, ejecuta:
+
+bash
+Copiar
+Editar
+ng generate component nombre-del-componente
+Para una lista completa de los esquemas disponibles (como componentes, directivas o pipes), ejecuta:
+
+bash
+Copiar
+Editar
+ng generate --help
+Construcción del Proyecto 🏗️
+Para construir el proyecto, ejecuta:
+
+bash
+Copiar
+Editar
+ng build
+Esto compilará el proyecto y almacenará los artefactos de construcción en el directorio dist/. De forma predeterminada, la compilación de producción optimiza la aplicación para mejorar el rendimiento y la velocidad.
+
+Ejecución de Pruebas Unitarias 🧪
+Para ejecutar las pruebas unitarias con el Karma, utiliza el siguiente comando:
+
+bash
+Copiar
+Editar
+ng test
+Ejecución de Pruebas End-to-End 🔍
+Para ejecutar pruebas end-to-end (e2e), ejecuta:
+
+bash
+Copiar
+Editar
+ng e2e
+El Angular CLI no incluye un framework de pruebas end-to-end por defecto. Puedes elegir el que mejor se adapte a tus necesidades.
+
+Recursos Adicionales 📚
+Para más información sobre cómo utilizar el Angular CLI, incluyendo referencias detalladas de comandos, visita la página de la Guía de Angular CLI.
+
+markdown
+Copiar
+Editar
+
+### Emojis añadidos:
+- **🐱🐾** para el título del proyecto.
+- **🚀** para el servidor de desarrollo.
+- **🖥️** para la generación de código.
+- **🏗️** para la construcción del proyecto.
+- **🧪** para las pruebas unitarias.
+- **🔍** para las pruebas end-to-end.
+- **📚** para los recursos adicionales.
