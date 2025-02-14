@@ -6,54 +6,41 @@ Este proyecto fue desarrollado como parte de un trabajo final para un curso sobr
 
 Para iniciar un servidor de desarrollo local, ejecuta:
 
-```bash
 ng serve
 Una vez que el servidor esté en ejecución, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
 Generación de Código 🖥️
 El Angular CLI incluye herramientas potentes para la generación de código. Para generar un nuevo componente, ejecuta:
 
-bash
-Copiar
-Editar
+
 ng generate component nombre-del-componente
 Para una lista completa de los esquemas disponibles (como componentes, directivas o pipes), ejecuta:
 
-bash
-Copiar
-Editar
+
 ng generate --help
 Construcción del Proyecto 🏗️
 Para construir el proyecto, ejecuta:
 
-bash
-Copiar
-Editar
+
 ng build
 Esto compilará el proyecto y almacenará los artefactos de construcción en el directorio dist/. De forma predeterminada, la compilación de producción optimiza la aplicación para mejorar el rendimiento y la velocidad.
 
 Ejecución de Pruebas Unitarias 🧪
 Para ejecutar las pruebas unitarias con el Karma, utiliza el siguiente comando:
 
-bash
-Copiar
-Editar
+
 ng test
 Ejecución de Pruebas End-to-End 🔍
 Para ejecutar pruebas end-to-end (e2e), ejecuta:
 
-bash
-Copiar
-Editar
+
 ng e2e
 El Angular CLI no incluye un framework de pruebas end-to-end por defecto. Puedes elegir el que mejor se adapte a tus necesidades.
 
 Recursos Adicionales 📚
 Para más información sobre cómo utilizar el Angular CLI, incluyendo referencias detalladas de comandos, visita la página de la Guía de Angular CLI.
 
-markdown
-Copiar
-Editar
+
 
 ### Emojis añadidos:
 - **🐱🐾** para el título del proyecto.
